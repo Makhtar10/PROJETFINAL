@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dom.css" />
+    <script
+      src="https://kit.fontawesome.com/c9e0da8296.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Checkpoint DOM</title>
+  </head>
+
+  <body class="corp">
+    <div class="header">
+        <p class="logo">MON PANIER DE CRAMPONS</p>
+        <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count"></p></div>
+    </div>
+    
+    <div class="main">
+      <div class="articles">
+      <!-- menu a faire -->
+        <!--box1-->
+        <div class="grandiv">
+          <div class="box">
+            <img
+              class="basket"
+              src="bota-nike-zoom-mercurial-vapor-15-elite-fg-turquesa-0.jpg"
+              alt="basket"
+            />
+            <h3 class="nom">Crampons nike</h3>
+            <div class="colgate">
+              <span class="TU">Prix Unitaire</span>
+              <span  class="pu">40000</span>
+              <span class="M">Fcfa</span>
+            </div>
+            <!--prix-totalUnitaire-->
+            <div class="totalUnit">
+              <span class="TU">Total Unitaire </span>
+              <span class="price" id="pu1">0</span>
+              <span class="M">Fcfa</span>
+            </div>
+            <div>
+              <button class="moins">-</button>
+              <span class="num">0</span>
+              <button class="plus">+</button>
+            </div>
+            <div class="icon1">
+              <div>
+                <button onclick="toggle3()" id="btnh1"m class="btn">
+                  <i class="fa-solid fa-heart"></i>
+                </button>
+              </div>
+              <!-- <div>
+              <button class="faSolid " onclick="toggle1()" id="bnth1">
+                <i  class="fa-solid fa-heart btn"></i>
+              </button>
+            </div> -->
+              <div class="del">
+                <div>
+                  <!-- <button class="fatrash"> -->
+                    <i class="fa-solid fa-trash"></i>
+                  <!-- </button> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--box2-->
+        <div class="grandiv">
+          <div class="box">
+            <img
+              class="basket"
+              src="crampons-x-crazyfast-adidas-4.jpg"
+              height="150px"
+              width="90px"
+              alt=""
+            />
+            <h3 class="nom">Crampons Adidas</h3>
+            <div>
+              <span class="TU">Prix Unitaire</span>
+              <span  class="pu">35000</span>
+              <span class="M">Fcfa</span>
+            </div>
+            <!--prix-totalUnitaire-->
+            <div class="totalUnit">
+              <span class="TU">Total Unitaire </span>
+              <span class="price" id="pu2">0</span>
+              <span class="M">Fcfa</span>
+            </div>
+            <div>
+              <button class="moins">-</button>
+              <span class="num">0</span>
+              <button class="plus">+</button>
+            </div>
+            <div class="icon2">
+              <div>
+                <button onclick="toggle3()" id="btnh1" class="btn">
+                  <i class="fa-solid fa-heart"></i>
+                </button>
+              </div>
+              <div class="del">
+                <!-- <button class="fatrash"> -->
+                  <i class="fa-solid fa-trash"></i>
+                <!-- </button> -->
+              </div>
+            </div>
+          </div>
+          <!--box3-->
+        </div>
+        <div class="grandiv">
+          <div class="box">
+            <img
+              class="basket"
+              src="crampons-puma-2023-energypack-1.jpeg"
+              height="150px"
+              width="90px"
+              alt=""
+            />
+            <h3 class="nom">Cramons Puma</h3>
+            <div>
+              <span class="TU">Prix Unitaire</span>
+              <span  class="pu">30000</span>
+              <span class="M">Fcfa</span>
+            </div>
+            <!--prix-totalUnitaire-->
+            <div class="totalUnit">
+              <span class="TU">Total Unitaire</span>
+              <span class="price" id="pu3" >0</span>
+              <span class="M">Fcfa</span>
+            </div>
+            <div>
+              <button class="moins">-</button>
+              <span class="num">0</span>
+              <button class="plus">+</button>
+            </div>
+            <div class="icon3">
+              <div>
+                <button onclick="toggle3()" id="btnh1" class="btn">
+                  <i class="fa-solid fa-heart"></i>
+                </button>
+              </div>
+              <div class="del">
+                <!-- <button class="fatrash"> -->
+                  <i class="fa-solid fa-trash"></i>
+                <!-- </button> -->
+              </div>
+            </div>
+          </div>
+        
+        </div>
+        <br />
+        <!--totalUnitaire-->
+        <div class="sammba">
+          <span class="TC"><b>Total Commande:</b></span>
+          <span id="tyu">0</span>
+          <span class="M">Fcfa</span>
+        </div>
+
+     </div>
+    </div>
+  </div>
+    <script src="dom.js"></script>
+  </body>
+</html>
